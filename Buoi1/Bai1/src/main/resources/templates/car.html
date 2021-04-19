@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<h1 style="border-radius: 0">Danh Sách Các Siêu Xe Xịn Nhất 2021</h1>
+<ul class="d-flex">
+    <li th:each="car: ${cars}" class="d-flex">
+        <img th:src="@{${car.getPhoto()}}"><br>
+        <p th:text="${car.getName()+'-'+car.getPrice()+'-'+car.getManufacturer()}"></p>
+    </li>
+</ul>
+</body>
+</html>

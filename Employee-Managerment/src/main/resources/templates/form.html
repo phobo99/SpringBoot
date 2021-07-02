@@ -38,25 +38,30 @@
                                    th:field="*{firstName}" class="form-control">
                         </div>
                         <div class="col-md-6">
-                            <span th:if="${#fields.hasErrors('firstName')}" th:errorclass="error" th:errors="*{firstName}"></span>
+                            <span th:if="${#fields.hasErrors('firstName')}" th:errorclass="error"
+                                  th:errors="*{firstName}"></span>
                         </div>
                         <div class="col-md-2">
                             <label for="lastName">Last Name</label>
                         </div>
                         <div class="col-md-4">
-                            <input th:errorclass="error" type="text"  placeholder="Bùi" name="lastName" th:field="*{lastName}" class="form-control">
+                            <input th:errorclass="error" type="text" placeholder="Bùi" name="lastName"
+                                   th:field="*{lastName}" class="form-control">
                         </div>
                         <div class="col-md-6">
-                            <span th:if="${#fields.hasErrors('lastName')}" th:errorclass="error" th:errors="*{lastName}"></span>
+                            <span th:if="${#fields.hasErrors('lastName')}" th:errorclass="error"
+                                  th:errors="*{lastName}"></span>
                         </div>
                         <div class="col-md-2">
                             <label for="emailId">Email</label>
                         </div>
                         <div class="col-md-4">
-                            <input th:errorclass="error" type="email"  placeholder="email@domain.com" name="emailId" th:field="*{emailId}" class="form-control">
+                            <input th:errorclass="error" type="email" placeholder="email@domain.com" name="emailId"
+                                   th:field="*{emailId}" class="form-control">
                         </div>
                         <div class="col-md-6">
-                            <span th:if="${#fields.hasErrors('emailId')}" th:errorclass="error" th:errors="*{emailId}"></span>
+                            <span th:if="${#fields.hasErrors('emailId')}" th:errorclass="error"
+                                  th:errors="*{emailId}"></span>
                         </div>
                         <div class="col-md-6">
                             <input type="submit" class="btn btn-primary" value=" Submit ">
